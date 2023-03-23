@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,200&display=swap" rel="stylesheet">
     <title>Hangman</title>
 </head>
 <body>
@@ -18,16 +20,30 @@
     </header>
 
     <main>
-        <div id="letters"></div>
+        <div id="letters">
+           <button class="alphabet">A</button>
+           <button class="alphabet">A</button>
+           <button class="alphabet">A</button>
+           <button class="alphabet">A</button>
+           <button class="alphabet">A</button>
+           <button class="alphabet">A</button>
+        </div>
         <div id="category">
             <span id="current-category">Piłka nożna</span>
         </div>
-        <div id="answear"></div>
+        <div id="answear">
+            <span class="answear-span">R</span>
+            <span class="answear-span">E</span>
+            <span class="answear-span">A</span>
+            <span class="answear-span">L</span>
+        </div>
         <div id="game-stage">
-            <span id="current-game-stage">Zostało Ci 10 prób.</span>
+            <label>Zostało Ci&nbsp;</label>
+            <span id="lives">10 prób.</span>
         </div>
         <div id="new-game">
             <button id="new-game-button">Nowa gra</button>
+            <button id="hint-button">Podpowiedź</button>
         </div>
     </main>
     
