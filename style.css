@@ -83,34 +83,29 @@ main{
     font-size: 28px;
 }
 
-#answear{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.answear-span{
+
+.answear-li{
+    display: inline-block;
     width: 40px;
     height: 40px;
-    display: grid;
-    place-items: center;
     font-size: 40px;
     font-weight: 700;
     margin-right: 10px;
     border-bottom: 4px solid #000;
+    text-align: center;
 }
 
-.answear-span-spacebar{
+.answear-li-spacebar{
+    display: inline-block;
     width: 40px;
     height: 40px;
-    display: grid;
-    place-items: center;
     font-size: 40px;
     font-weight: 700;
     margin-right: 10px;
 }
 
-.answear-span:last-child{
+.answear-li:last-child{
     margin-right: 0;
 }
 
@@ -173,3 +168,10 @@ main{
     font-weight: 700;
     background-color: #d3d3d3;
 }
+
+
+
+
+
+
+
