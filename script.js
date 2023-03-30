@@ -38,13 +38,17 @@ const Hangman = {
             letter.addEventListener('click', () =>{
                 letter.className = "clicked-button";
                 const list = document.querySelectorAll('#answear-ul li');
-
-                list.forEach((item) =>{
-                    if(letter.value == item.getAttribute('value')){
-                        item.innerHTML = String.fromCharCode(letter.value);
+                let control_var = 0;
+                for(let i=0; i<list.length; i++){
+                    if(letter.value == list[i].getAttribute('value')){
+                        list[i].innerHTML = String.fromCharCode(letter.value);
+                        control_var++;
                     }
-                    
-                })
+                }
+                if(control_var==0){
+                    this.live_counter = this.live_counter -1;
+                }
+                document.getElementById('lives').innerHTML = this.live_counter;
             })
 
             
