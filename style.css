@@ -169,6 +169,26 @@ main{
     background-color: #d3d3d3;
 }
 
+#hint-div{
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(2, auto-fit);
+    grid-row-gap: 20px;
+    place-items: center;
+}
+
+#win-span{
+    color: var(--dark-green);
+    font-size: 60px;
+    font-weight: 700;
+}
+
+#hint-span{
+    color: var(--dark-green);
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
 
 
 
